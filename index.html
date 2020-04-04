@@ -23,21 +23,21 @@
              </div>
           </div>
        </div>
-    <!-- Input Form -->
-    <div class="row">
-        <div class="col-12">
-            <form>
-                <!-- Search -->
-            <div class="form-row">
-                <div class="form-group col-md-12">
-                <label for="queryTerm">Search</label>
-                <input type="text" class="form-control" id="queryTerm" placeholder="">
-                </div>
-            </div>
-                <!-- Number of Articles to Search -->
+         <!-- Input Form -->
+         <div class="row">
+            <div class="col-12">
+                <form>
+                    <!-- Search Form -->
                 <div class="form-row">
                     <div class="form-group col-md-12">
-                    <label for="length">Number of Articles to Retrieve</label>
+                    <label for="queryTerm">Search Term</label>
+                    <input type="text" class="form-control" id="queryTerm" placeholder="">
+                    </div>
+                </div>
+                <!-- Number of articles to search -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                    <label for="length">Number of Articles to Return</label>
                     <select id="length" class="form-control">
                         <option>1</option>
                         <option>2</option>
@@ -52,6 +52,35 @@
                     </select>
                     </div>
                 </div>
+                <!-- Start Year -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                    <label for="beginYear">Start Year</label>
+                    <input type="number" class="form-control" id="beginYear" placeholder="">
+                </div>
+                </div>
+                <!-- End Year -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                    <label for="endYear">End Year</label>
+                    <input type="number" class="form-control" id="endYear" placeholder="">
+                    </div>
+                </div>
+​
+                <button type="submit" class="btn btn-primary" id="submit">Search</button>
+                <button type="submit" class="btn btn-primary" id="clear">Clear Results</button>
+                </form>
+            </div>
+         </div>
+         <!-- Search Results -->
 
+        <div class="container">
+                 <div class ="row" id="search-results">
+        ​
+                 </div>
+        </div>
+      </div>            
+
+    </div>
 </body>
 </html>
